@@ -1,0 +1,12 @@
+lookup_options:
+  nftables::tables:
+    merge: deep
+
+nftables::package_name: nftables
+nftables::package_ensure: installed
+nftables::service_name: nftables
+nftables::service_ensure: running
+nftables::service_enable: true
+nftables::nft_path: /usr/sbin/nft
+nftables::conf_path: /etc/nftables.conf
+nftables::tables: []
